@@ -9,17 +9,9 @@ int main()
 {
   double a,b,c,discriminant,root1,root2;
 
-  cout<<"Enter value of a:";
   cin>>a;
-  cout<<endl;
-
-  cout<<"Enter value of b:";
   cin>>b;
-  cout<<endl;
-
-  cout<<"Enter value of c:";
   cin>>c;
-  cout<<endl;
 
   discriminant= (pow(b,2.0))-4*a*c;
   root1= (-b+sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
