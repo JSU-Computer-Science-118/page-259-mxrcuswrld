@@ -13,6 +13,9 @@ int main()
   cin>>b;
   cin>>c;
 
+   if (a==0)
+    cout<<"Invalid entry"<<endl;
+
   discriminant= (pow(b,2.0))-4*a*c;
   root1= (-b+sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
   root2=(-b-sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
@@ -30,6 +33,8 @@ int main()
 
   if (discriminant<0)
     cout<<"Complex roots"<<endl;
+
+ 
 
   
 
