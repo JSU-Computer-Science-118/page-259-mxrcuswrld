@@ -13,8 +13,10 @@ int main()
   cin>>b;
   cin>>c;
 
-   if (a==0)
-    cout<<"Invalid entry "<<endl;
+   if (a==0){cout<<"Invalid entry "<<endl;
+     return 0;
+       }
+    
 
   discriminant= (pow(b,2.0))-4*a*c;
   root1= (-b+sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
