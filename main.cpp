@@ -22,25 +22,20 @@ int main()
   cout<<endl;
 
   discriminant= (pow(b,2.0))-4*a*c;
-
-  cout<<"Discriminant="<<discriminant<<endl;
-
-  if (discriminant==0)
-    cout<<"There is one real root."<<endl;
-
-  if (discriminant>0)
-    cout<<"There are two real roots."<<endl;
-
-  if (discriminant<0)
-    cout<<"There are two complex roots"<<endl;
-
   root1= (-b+sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
   root2=(-b-sqrt(pow(b,2.0)-(4*a*c)))/(2*a);
 
-  cout<<"root 1:"<<"x="<<root1<<
-    endl;
-  cout<<"root 2:"<<"x="<<root2<<
-    endl;
+  if (discriminant==0)
+    cout<<"The single root is "<<root1<<endl;
+
+  if (discriminant>0)
+    cout<<"Two real roots"<<endl;
+
+  if (discriminant<0)
+    cout<<"Complex roots"<<endl;
+
+  
+
 
   return 0;
 }
