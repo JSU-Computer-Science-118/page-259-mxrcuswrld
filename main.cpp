@@ -30,6 +30,11 @@ int main()
 
   if (discriminant>0)
     cout<<"Two real roots"<<endl;
+  if (discriminant>0)
+    cout<<"- First root "<<root1<<endl;
+  if (discriminant>0)
+    cout<<"- Second root "<<root2<<endl;
+  
 
   if (discriminant<0)
     cout<<"Complex roots"<<endl;
